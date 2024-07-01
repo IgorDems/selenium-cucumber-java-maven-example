@@ -1,13 +1,23 @@
 package env;
-
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
+//
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.cucumber.java.Before;
+import io.cucumber.java.After;
 
 public class Hooks {
-	@After("@NegativeTest")
-	public void beforeScenario(Scenario scenario) {
-//		System.out.println("In hooks");
-//		System.out.println(scenario.getName());
-//		System.out.println(scenario.getStatus());
-	}
+    public static WebDriver driver;
+
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "C:\\DRV\\chromedriver-win64\\chromedriver");
+        driver = new ChromeDriver();
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }

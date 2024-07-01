@@ -28,12 +28,12 @@
 		</dependency>
 
 		<!-- These are the junit dependencies -->
-<!--		<dependency>-->
-<!--			<groupId>junit</groupId>-->
-<!--			<artifactId>junit</artifactId>-->
-<!--			<version>4.13.2</version>-->
-<!--			<scope>test</scope>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
@@ -56,12 +56,23 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>7.18.0</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+
 		<!-- These are the Appium dependencies -->	
 		<dependency>
 		    <groupId>io.appium</groupId>
 		    <artifactId>java-client</artifactId>
 		    <version>5.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>RELEASE</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	
